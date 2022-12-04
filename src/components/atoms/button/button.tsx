@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik"
+import { $, component$, QwikMouseEvent } from "@builder.io/qwik"
 import { twMerge } from "tailwind-merge"
 
 export enum buttonSize {
@@ -14,7 +14,7 @@ export interface buttonProps {
   color?: string
   size?: buttonSize
   type?: "button" | "submit" | "reset"
-  onClick?: () => void
+  onClick?: (event: QwikMouseEvent) => void
   disabled?: boolean
   icon?: string
 }
@@ -29,7 +29,12 @@ export default component$((props: buttonProps) => {
         props.color ?? "bg-lightBlue"
       )}
       type={props.type ?? "button"}
-      onClick$={props.onClick}
+      onClick$={
+        props.onClick ??
+        $(() => {
+          console.log("Button clicked")
+        })
+      }
       disabled={props.disabled}
     >
       {props.text}
