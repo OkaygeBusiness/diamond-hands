@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik"
 import type { DocumentHead } from "@builder.io/qwik-city"
 import HeaderText from "../components/atoms/headerText/headerText"
 import SubHeaderText from "../components/atoms/subHeaderText/subHeaderText"
+import Button, { buttonSize } from "../components/atoms/button/button"
 import { Link } from "@builder.io/qwik-city"
 
 export default component$(() => {
@@ -15,6 +16,8 @@ export default component$(() => {
           <SubHeaderText className="text-xl font-bold text-gray-400" text={`Welcome back ${name.split(" ")[0]}`} />
         </div>
       </header>
+      {/* example of using button component props to change button size or add a logo*/}
+      <Button text="Logout" size={buttonSize.small} icon="/assets/logo-black.png" />
     </>
   )
 })
