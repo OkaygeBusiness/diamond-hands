@@ -1,21 +1,30 @@
 import { component$ } from "@builder.io/qwik"
 import type { DocumentHead } from "@builder.io/qwik-city"
+import HeaderText from "~/components/headerText/headerText"
+import SubHeaderText from "~/components/subHeaderText/subHeaderText"
 import { Link } from "@builder.io/qwik-city"
 
 export default component$(() => {
+  const name = "Jhon Doe"
   return (
     <>
-      <div class="bg-sky-500"> despairge </div>
+      <header class="flex">
+        <img class="h-12 w-12"src="/assets/logo-black.png" alt="logo" />
+        <div>
+          <HeaderText text={name} />
+          <SubHeaderText text={`Welcome back ${name.split(" ")[0]}`} />
+        </div>
+      </header>
     </>
   )
 })
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Welcome to Diamond Hands",
   meta: [
     {
       name: "description",
-      content: "Qwik site description"
+      content: "A simple, lightweight, and fast web app for tracking your stock portfolio."
     }
   ]
 }
