@@ -1,5 +1,10 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik"
+import { component$ } from "@builder.io/qwik"
+import { colors } from "../../colors/colors"
 
 export default component$(() => {
-    return <></>
+  return (
+    <>
+      <div class={`bg-${colors.green}`}></div>
+    </>
+  )
 })
