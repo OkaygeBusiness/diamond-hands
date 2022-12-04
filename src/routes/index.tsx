@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik"
+import { $, component$ } from "@builder.io/qwik"
 import type { DocumentHead } from "@builder.io/qwik-city"
 import HeaderText from "../components/atoms/headerText/headerText"
 import SubHeaderText from "../components/atoms/subHeaderText/subHeaderText"
