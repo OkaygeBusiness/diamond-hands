@@ -1,5 +1,5 @@
 import { component$, Slot } from "@builder.io/qwik"
-import Navbar from "../components/templates/navbar/navbar"
+import Navbar from "../components/organisims/navbar/navbar"
 
 export default component$(() => {
   return (
