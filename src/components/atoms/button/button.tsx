@@ -29,12 +29,7 @@ export default component$((props: buttonProps) => {
         props.color ?? "bg-lightBlue"
       )}
       type={props.type ?? "button"}
-      onClick$={
-        props.onClick ??
-        (() => {
-          console.log("Button clicked")
-        })
-      }
+      onClick$={props.onClick}
       disabled={props.disabled}
     >
       {props.text}
