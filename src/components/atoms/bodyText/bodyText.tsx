@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik"
+import { twMerge } from "tailwind-merge"
 
 export interface bodyTextProps {
   text: string
@@ -7,5 +8,5 @@ export interface bodyTextProps {
 }
 
 export default component$((props: bodyTextProps) => {
-  return <p className={props.className ?? (props.color ?? "text-black", "text-lg")}>{props.text}</p>
+  return <p className={twMerge(props.className, props.color ?? "text-black", "text-lg")}>{props.text}</p>
 })
