@@ -12,7 +12,7 @@ export default component$(() => {
         <img class="h-12 w-12" src="/assets/logo-black.png" alt="logo" />
         <div>
           <HeaderText text={name} />
-          <SubHeaderText text={`Welcome back ${name.split(" ")[0]}`} />
+          <SubHeaderText className="text-xl font-bold text-gray-400" text={`Welcome back ${name.split(" ")[0]}`} />
         </div>
       </header>
     </>
