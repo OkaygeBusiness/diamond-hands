@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik"
 import type { DocumentHead } from "@builder.io/qwik-city"
-import HeaderText from "~/components/headerText/headerText"
-import SubHeaderText from "~/components/subHeaderText/subHeaderText"
+import HeaderText from "~/components/atoms/headerText/headerText"
+import SubHeaderText from "~/components/atoms/subHeaderText/subHeaderText"
 import { Link } from "@builder.io/qwik-city"
 
 export default component$(() => {
@@ -9,7 +9,7 @@ export default component$(() => {
   return (
     <>
       <header class="flex">
-        <img class="h-12 w-12"src="/assets/logo-black.png" alt="logo" />
+        <img class="h-12 w-12" src="/assets/logo-black.png" alt="logo" />
         <div>
           <HeaderText text={name} />
           <SubHeaderText text={`Welcome back ${name.split(" ")[0]}`} />
