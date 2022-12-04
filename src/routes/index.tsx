@@ -12,8 +12,8 @@ export default component$(() => {
       <header class="flex">
         <img class="h-12 w-12" src="/assets/logo-black.png" alt="logo" />
         <div>
-          <HeaderText text={name} />
-          <SubHeaderText className="text-xl font-bold text-gray-400" text={`Welcome back ${name.split(" ")[0]}`} />
+          <HeaderText text={name} color="text-black" />
+          <SubHeaderText className="text-xl font-bold text-gray-400" text={`Welcome back ${name.split(" ")[0]}!`} />
         </div>
       </header>
       {/* example of using button component props to change button size or add a logo*/}
