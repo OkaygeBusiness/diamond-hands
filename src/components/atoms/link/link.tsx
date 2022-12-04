@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik"
+import { twMerge } from "tailwind-merge"
 
 export interface linkProps {
   text: string
@@ -9,7 +10,7 @@ export interface linkProps {
 
 export default component$((props: linkProps) => {
   return (
-    <a className={props.className} href={props.href}>
+    <a className={twMerge(props.className, props.color ?? "bg-lightBlue")} href={props.href}>
       {props.text}
     </a>
   )

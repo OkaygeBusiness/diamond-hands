@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik"
+import { twMerge } from "tailwind-merge"
 
 export interface subHeaderTextProps {
   text: string
@@ -10,6 +11,8 @@ export interface subHeaderTextProps {
 
 export default component$((props: subHeaderTextProps) => {
   return (
-    <h2 className={props.className ?? (props.textSize ?? "text-xl", props.weight ?? "font-bold", props.color ?? "text-gray-400")}>{props.text}</h2>
+    <h2 className={twMerge(props.className, props.textSize ?? "text-xl", props.weight ?? "font-bold", props.color ?? "text-gray-400")}>
+      {props.text}
+    </h2>
   )
 })
