@@ -3,7 +3,7 @@ import Icon from "../../atoms/icon/icon"
 import SubHeaderText from "../../atoms/subHeaderText/subHeaderText"
 
 export interface navbarButtonProps {
-  text?: string
+  text: string
   image?: string
   height?: string
 }

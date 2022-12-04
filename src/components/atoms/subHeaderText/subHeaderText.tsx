@@ -1,10 +1,15 @@
 import { component$ } from "@builder.io/qwik"
 
 export interface subHeaderTextProps {
-  text?: string;
-  className?: string;
+  text: string
+  textSize?: string
+  weight?: string
+  color?: string
+  className?: string
 }
 
 export default component$((props: subHeaderTextProps) => {
-  return <h2 class={props.className ?? "text-xl font-bold"}>{props.text}</h2>
+  return (
+    <h2 className={props.className ?? (props.textSize ?? "text-xl", props.weight ?? "font-bold", props.color ?? "text-gray-400")}>{props.text}</h2>
+  )
 })

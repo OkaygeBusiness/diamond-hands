@@ -1,10 +1,11 @@
 import { component$ } from "@builder.io/qwik"
 
-export interface subHeaderTextProps {
-  text?: string;
-  className?: string;
+export interface bodyTextProps {
+  text: string
+  color?: string
+  className?: string
 }
 
-export default component$((props: subHeaderTextProps) => {
-  return <p class={props.className ?? "text-lg"}>{props.text}</p>
+export default component$((props: bodyTextProps) => {
+  return <p className={props.className ?? (props.color ?? "text-black", "text-lg")}>{props.text}</p>
 })
