@@ -16,14 +16,14 @@ export interface buttonProps {
   onClick?: (event: QwikMouseEvent) => void
   disabled?: boolean
   icon?: string
-  className?: string
+  class?: string
 }
 
 export default component$((props: buttonProps) => {
   return (
     <button
       class={twMerge(
-        props.className ?? "",
+        props.class ?? "",
         props.size ?? buttonSize.medium,
         "text-white font-bold rounded-md flex flex-row",
         props.color ?? "bg-lightBlue"
