@@ -38,7 +38,7 @@ export default component$((props: buttonProps) => {
       disabled={props.disabled}
     >
       {props.text}
-      <img class="w-6" src={props.icon} />
+      {props.icon && <img class="w-6" src={props.icon} />}
     </button>
   )
 })
