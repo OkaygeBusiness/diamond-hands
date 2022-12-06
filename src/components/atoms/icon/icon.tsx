@@ -8,5 +8,5 @@ export interface iconProps {
 }
 
 export default component$((props: iconProps) => {
-  return <img className={twMerge(props.className, props.height ?? "h-6", "right-6")} src={props.image} alt="icon" />
+  return <img class={twMerge(props.className, props.height ?? "h-6")} src={props.image} alt="icon" />
 })

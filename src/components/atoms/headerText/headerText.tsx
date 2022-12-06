@@ -9,5 +9,5 @@ export interface headerTextProps {
 }
 
 export default component$((props: headerTextProps) => {
-  return <h1 className={twMerge(props.className, props.color ?? "text-white", props.size ?? "text-4xl", "font-bold")}>{props.text}</h1>
+  return <h1 class={twMerge(props.className, props.color ?? "text-white", props.size ?? "text-4xl", "font-bold")}>{props.text}</h1>
 })

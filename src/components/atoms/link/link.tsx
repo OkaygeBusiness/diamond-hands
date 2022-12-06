@@ -11,7 +11,7 @@ export interface linkProps {
 
 export default component$((props: linkProps) => {
   return (
-    <Link className={twMerge(props.className, props.color ?? "bg-lightBlue")} href={props.href}>
+    <Link class={twMerge(props.className, props.color ?? "bg-lightBlue")} href={props.href}>
       {props.text}
     </Link>
   )
