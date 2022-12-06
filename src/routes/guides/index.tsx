@@ -1,5 +1,6 @@
 import { $, component$ } from "@builder.io/qwik"
+import HeaderText from "../../components/atoms/headerText/headerText"
 
 export default component$(() => {
-  return <h1>Guides</h1>
+  return <HeaderText text={"Guides"} color="text-black" />
 })
