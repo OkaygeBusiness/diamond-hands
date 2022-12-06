@@ -3,7 +3,6 @@ import type { DocumentHead } from "@builder.io/qwik-city"
 import HeaderText from "../components/atoms/headerText/headerText"
 import SubHeaderText from "../components/atoms/subHeaderText/subHeaderText"
 import Button, { buttonSize } from "../components/atoms/button/button"
-import { Link } from "@builder.io/qwik-city"
 
 export default component$(() => {
   const name = "John Doe"
