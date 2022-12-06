@@ -10,19 +10,19 @@ export enum buttonSize {
 
 export interface buttonProps {
   text: string
-  className?: string
   color?: string
   size?: buttonSize
   type?: "button" | "submit" | "reset"
   onClick?: (event: QwikMouseEvent) => void
   disabled?: boolean
   icon?: string
+  className?: string
 }
 
 export default component$((props: buttonProps) => {
   return (
     <button
-      className={twMerge(
+      class={twMerge(
         props.className ?? "",
         props.size ?? buttonSize.medium,
         "text-white font-bold rounded-md flex flex-row",
@@ -38,7 +38,7 @@ export default component$((props: buttonProps) => {
       disabled={props.disabled}
     >
       {props.text}
-      <img className="w-6" src={props.icon} />
+      <img class="w-6" src={props.icon} />
     </button>
   )
 })

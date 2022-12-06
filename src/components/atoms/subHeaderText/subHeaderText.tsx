@@ -11,8 +11,6 @@ export interface subHeaderTextProps {
 
 export default component$((props: subHeaderTextProps) => {
   return (
-    <h2 className={twMerge(props.className, props.textSize ?? "text-xl", props.weight ?? "font-bold", props.color ?? "text-gray-400")}>
-      {props.text}
-    </h2>
+    <h2 class={twMerge(props.className, props.textSize ?? "text-xl", props.weight ?? "font-bold", props.color ?? "text-gray-400")}>{props.text}</h2>
   )
 })

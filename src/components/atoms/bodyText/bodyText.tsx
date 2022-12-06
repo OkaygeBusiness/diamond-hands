@@ -9,5 +9,5 @@ export interface bodyTextProps {
 }
 
 export default component$((props: bodyTextProps) => {
-  return <p className={twMerge(props.className, props.color ?? "text-black", props.size ?? "text-lg")}>{props.text}</p>
+  return <p class={twMerge(props.className, props.color ?? "text-black", props.size ?? "text-lg")}>{props.text}</p>
 })
