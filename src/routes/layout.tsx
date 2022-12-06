@@ -6,7 +6,9 @@ export default component$(() => {
     <>
       <main>
         <section>
-          <Slot />
+          <div class="container mx-auto my-8 w-4/5">
+            <Slot />
+          </div>
         </section>
       </main>
       <Navbar />
