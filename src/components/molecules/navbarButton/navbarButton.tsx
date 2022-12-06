@@ -12,13 +12,15 @@ export interface navbarButtonProps {
 
 export default component$((props: navbarButtonProps) => {
   return (
-    <Link href={props.link}>
-      <div className="bg-darkBlue flex flex-col items-center py-2 w-40">
-        <div className="flex flex-col items-center">
-          <Icon image={props.image} height={props.height} />
+    <>
+      <Link href={props.link}>
+        <div className="bg-darkBlue flex flex-col items-center py-3 mx-3 lg:mx-20 sm:w-8 md:w-14 lg:w-20">
+          <div className="flex flex-col items-center">
+            <Icon image={props.image} height={props.height} />
+          </div>
+          <SubHeaderText text={props.text} color="text-white" textSize="text-s" />
         </div>
-        <SubHeaderText text={props.text} color="text-white" textSize="text-s" />
-      </div>
-    </Link>
+      </Link>
+    </>
   )
 })
