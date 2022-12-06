@@ -25,7 +25,9 @@ export default component$((props: miniCardProps) => {
       <div class={twMerge(props.backgroundColor ?? "bg-darkBlue", "flex flex-col rounded-lg p-4 my-8")}>
         <HeaderText text={props.text} />
         <SubHeaderText text={props.subText} class="mb-5" />
-        <Button text="View" class="ml-48" />
+        <div class="flex justify-end">
+          <Button text="View" />
+        </div>
       </div>
     </>
   )
