@@ -15,10 +15,13 @@ export interface Stock {
   logo: string
 }
 
+export type WatchList = Stock[]
+
 export interface User {
   id: number
   name: string
   currency: Currency
   wallet: number
   highscore: number
+  watchlist?: WatchList
 }

@@ -1,5 +1,6 @@
 import { Stock } from "../../types"
 import { stocks } from "../../db/stocks"
+import * as UserService from "./userService"
 
 export const getStocks = (): Stock[] => {
   return stocks
@@ -9,22 +10,17 @@ export const getStock = (id: number): Stock | undefined => {
   return stocks.find((stock) => stock.id === id)
 }
 
-export const addStock = (stock: Stock): Stock => {
-  stocks.push(stock)
-  return stock
-}
-
-export const updateStock = (stock: Stock): Stock | undefined => {
-  const index = stocks.findIndex((s) => s.id === stock.id)
-  if (index !== -1) {
-    stocks[index] = stock
-    return stock
-  }
-}
-
-export const deleteStock = (id: number): Stock | undefined => {
-  const index = stocks.findIndex((s) => s.id === id)
-  if (index !== -1) {
-    return stocks.splice(index, 1)[0]
+export const addWatchlistStock = (userId: number, stockId: number): Stock | undefined => {
+  const user = UserService.getUser(userId)
+  if (user) {
+    const stock = getStock(stockId)
+    if (stock) {
+      if (user.watchlist) {
+        user.watchlist.push(stock)
+      } else {
+        user.watchlist = [stock]
+      }
+      return stock
+    }
   }
 }
