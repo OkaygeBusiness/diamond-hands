@@ -1,4 +1,4 @@
-import { $, component$, QwikMouseEvent } from "@builder.io/qwik"
+import { component$ } from "@builder.io/qwik"
 import { twMerge } from "tailwind-merge"
 import Icon from "../../atoms/icon/icon"
 import { Link } from "@builder.io/qwik-city"
@@ -24,7 +24,7 @@ export interface buttonProps {
 
 export default component$((props: buttonProps) => {
   return (
-    <Link href={props.link}>
+    <Link href={props.link ?? "/"}>
       <button
         class={twMerge(
           props.class ?? "",

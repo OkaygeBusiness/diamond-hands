@@ -4,6 +4,7 @@ import HeaderText from "../components/atoms/headerText/headerText"
 import SubHeaderText from "../components/atoms/subHeaderText/subHeaderText"
 import Button, { buttonSize } from "../components/atoms/button/button"
 import MiniCard from "../components/molecules/miniCard/miniCard"
+import BigCard from "../components/molecules/bigCard/bigCard"
 
 export default component$(() => {
   const name = "John Doe"
@@ -16,6 +17,7 @@ export default component$(() => {
           <SubHeaderText class="text-xl font-bold text-gray-400" text={`Welcome back ${name.split(" ")[0]}!`} />
         </div>
       </header>
+      <BigCard headerText="Value" text="14,727$" buttonText="Stocks" gain="7.27%" isPositive={true} />
       <MiniCard text="Watchlist" subText="View your favourited stocks" buttonText="View" image="/assets/icons/star.png" link="/" />
       <MiniCard text="Trade History" subText="View your recent exchanges" buttonText="View" image={"/assets/icons/history.png"} link="/" />
       {/* example of using button component props to change button size or add a logo*/}
