@@ -1,7 +1,7 @@
 import { $, component$, QwikMouseEvent } from "@builder.io/qwik"
 import { twMerge } from "tailwind-merge"
 import Icon from "../../atoms/icon/icon"
-import Button from "../../atoms/button/button"
+import LinkButton from "../linkButton/linkButton"
 import SubHeaderText from "../../atoms/subHeaderText/subHeaderText"
 import HeaderText from "../../atoms/headerText/headerText"
 
@@ -12,7 +12,6 @@ export interface miniCardProps {
   backgroundColor?: string
   link?: string
   image?: string
-  onClick?: (event: QwikMouseEvent) => void
 }
 
 export default component$((props: miniCardProps) => {
@@ -25,7 +24,7 @@ export default component$((props: miniCardProps) => {
         </div>
         <SubHeaderText text={props.subText} class="mb-5" />
         <div class="flex justify-end">
-          <Button text={props.buttonText} onClick={props.onClick} />
+          <LinkButton text={props.buttonText} link={props.link} />
         </div>
       </div>
     </>
