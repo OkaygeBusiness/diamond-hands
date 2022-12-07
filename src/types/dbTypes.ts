@@ -15,13 +15,23 @@ export interface Stock {
   logo: string
 }
 
+export interface Trade {
+  stock: Stock
+  price: number
+  date: string
+  brokerFee: number
+  ammount: number
+}
+
 export type WatchList = Stock[]
 
 export interface User {
   id: number
   name: string
+  image?: string
   currency: Currency
   wallet: number
   highscore: number
   watchlist?: WatchList
+  tradeHistory?: Trade[]
 }
