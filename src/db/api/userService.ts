@@ -9,24 +9,21 @@ export const getUser = (id: number): User | undefined => {
   return users.find((user) => user.id === id)
 }
 
-export const addUser = (user: User): User => {
+export const addUser = (user: User): void => {
   users.push(user)
-  return user
 }
 
-export const updateScore = (id: number, score: number): User | undefined => {
+export const updateScore = (id: number, score: number): void => {
   const index = users.findIndex((u) => u.id === id)
   if (index !== -1) {
     users[index].highscore = score
-    return users[index]
   }
 }
 
-export const resetWallet = (id: number): User | undefined => {
+export const resetWallet = (id: number): void => {
   const index = users.findIndex((u) => u.id === id)
   if (index !== -1) {
     users[index].wallet = 10000
-    return users[index]
   }
 }
 
@@ -38,9 +35,9 @@ export const updateUser = (user: User): User | undefined => {
   }
 }
 
-export const deleteUser = (id: number): User | undefined => {
+export const deleteUser = (id: number): void => {
   const index = users.findIndex((u) => u.id === id)
   if (index !== -1) {
-    return users.splice(index, 1)[0]
+    users.splice(index, 1)[0]
   }
 }
