@@ -1,5 +1,5 @@
 import { User } from "../../types/"
-import { users } from "../../db/users"
+import { users } from "../../db"
 
 export const getUsers = (): User[] => {
   return users

@@ -1,5 +1,5 @@
 import { Stock } from "../../types"
-import { stocks } from "../../db/stocks"
+import { stocks } from "../../db"
 import * as UserService from "./userService"
 import { calculateBrokerFee, calculateTotal } from "../../utils"
 
