@@ -6,7 +6,7 @@ export default component$(() => {
   return (
     <>
       <Header text="Financial News" hasButton={false} />
-      <HeaderText text={"Trade"} color="text-black" />
+      <HeaderText text={"News"} color="text-black" />
     </>
   )
 })
