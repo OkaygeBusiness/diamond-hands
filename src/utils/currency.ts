@@ -14,9 +14,6 @@ export const calculateTotal = (value: number, amount: number) => {
 }
 
 export const calculateWalletValue = (wallet: Wallet) => {
-  if (wallet.length === 0) {
-    return 0
-  }
   return wallet.reduce((acc, stock) => {
     return acc + stock.price * stock.shares
   }, 0)
