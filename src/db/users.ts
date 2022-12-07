@@ -11,7 +11,7 @@ export const users: User[] = [
     watchlist: [
       { id: 1, name: "Nvidia", shortName: "NVDA", price: 26.24, logo: "/assets/stocks/nvidia.png" },
       { id: 2, name: "Apple", shortName: "AAPL", price: 1132.13, logo: "/assets/stocks/apple.png" },
-      { id: 3, name: "Microsoft", shortName: "MSFT", price: 245.12, logo: "/assets/stocks/microsoft.png" }
+      { id: 4, name: "Amazon", shortName: "AMZN", price: 88.24, logo: "/assets/stocks/amazon.png" }
     ],
     tradeHistory: [
       {
