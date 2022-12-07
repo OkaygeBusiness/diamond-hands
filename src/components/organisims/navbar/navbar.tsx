@@ -8,7 +8,7 @@ export interface navbarProps {
 
 export default component$((props: navbarProps) => {
   return (
-    <div class="absolute inset-x-0 bottom-0">
+    <div class="fixed inset-x-0 bottom-0">
       <div class={twMerge(props.class, "flex flex-row justify-between items-center bg-darkBlue")}>
         <NavbarButton text="Home" link="/" image="/assets/navbarIcons/home.png" height="h-6" />
         <NavbarButton text="News" link="/news" image="/assets/navbarIcons/news.png" height="h-6" />
