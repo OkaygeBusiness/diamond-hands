@@ -14,6 +14,22 @@ export const addUser = (user: User): User => {
   return user
 }
 
+export const updateScore = (id: number, score: number): User | undefined => {
+  const index = users.findIndex((u) => u.id === id)
+  if (index !== -1) {
+    users[index].highscore = score
+    return users[index]
+  }
+}
+
+export const resetWallet = (id: number): User | undefined => {
+  const index = users.findIndex((u) => u.id === id)
+  if (index !== -1) {
+    users[index].wallet = 10000
+    return users[index]
+  }
+}
+
 export const updateUser = (user: User): User | undefined => {
   const index = users.findIndex((u) => u.id === user.id)
   if (index !== -1) {
