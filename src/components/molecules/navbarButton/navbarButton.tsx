@@ -18,7 +18,7 @@ export default component$((props: navbarButtonProps) => {
           <div class="flex flex-col items-center">
             <Icon image={props.image} height={props.height} />
           </div>
-          <SubHeaderText text={props.text} color="text-white" textSize="text-s" />
+          <SubHeaderText text={props.text} color="text-white" size="text-s" />
         </div>
       </Link>
     </>
