@@ -19,11 +19,11 @@ export interface miniCardProps {
 export default component$((props: miniCardProps) => {
   return (
     <>
-      <div class={twMerge(props.backgroundColor ?? "bg-darkBlue", "flex flex-col rounded-lg py-8 px-4 my-8")}>
-        <HeaderText text={props.headerText} size="text-2xl" class="mb-4 -mt-4" />
+      <div class={twMerge(props.backgroundColor ?? "bg-darkBlue", "flex flex-col rounded-lg h-auto pt-6 px-4 my-6")}>
+        <HeaderText text={props.headerText} size="text-2xl" class="mb-4" />
         <HeaderText text={props.text} class="mb-2" />
         <NetGain text={props.gain} isPositive={props.isPositive} />
-        <div class="flex justify-end">
+        <div class="flex flex-row justify-end mb-4">
           <LinkButton text={props.buttonText} link={props.link} color="bg-lightGreen" />
         </div>
       </div>
