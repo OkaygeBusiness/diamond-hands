@@ -8,7 +8,7 @@ export const users: User[] = [
     wallet: 10000,
     highscore: 0,
     watchlist: [
-      { id: 1, name: "Nividia", shortName: "NVDA", price: 26.24, logo: "/assets/stocks/nvidia.png" },
+      { id: 1, name: "Nvidia", shortName: "NVDA", price: 26.24, logo: "/assets/stocks/nvidia.png" },
       { id: 2, name: "Apple", shortName: "AAPL", price: 1132.13, logo: "/assets/stocks/apple.png" },
       { id: 3, name: "Microsoft", shortName: "MSFT", price: 245.12, logo: "/assets/stocks/microsoft.png" }
     ]
