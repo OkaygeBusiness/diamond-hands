@@ -22,7 +22,7 @@ export default component$((props: headerProps) => {
             )}
           </div>
           <div>
-            <HeaderText text={props.text} size="text-3xl" />
+            <HeaderText text={props.text} size="text-4xl" />
           </div>
           <div>{/* for scuffed spacing */}</div>
         </div>
