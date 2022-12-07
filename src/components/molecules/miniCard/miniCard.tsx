@@ -1,32 +1,31 @@
-import { $, component$ } from "@builder.io/qwik"
+import { $, component$, QwikMouseEvent } from "@builder.io/qwik"
 import { twMerge } from "tailwind-merge"
-import Button from "../../atoms/button/button"
 import Icon from "../../atoms/icon/icon"
+import Button from "../../atoms/button/button"
 import SubHeaderText from "../../atoms/subHeaderText/subHeaderText"
-import { Link } from "@builder.io/qwik-city"
 import HeaderText from "../../atoms/headerText/headerText"
 
 export interface miniCardProps {
   text: string
   subText: string
+  buttonText: string
   backgroundColor?: string
   link?: string
   image?: string
+  onClick?: (event: QwikMouseEvent) => void
 }
 
 export default component$((props: miniCardProps) => {
-  const handleButtonClick = () => {
-    $(() => {
-      console.log("Button clicked")
-    })
-  }
   return (
     <>
       <div class={twMerge(props.backgroundColor ?? "bg-darkBlue", "flex flex-col rounded-lg p-4 my-8")}>
-        <HeaderText text={props.text} />
+        <div class="flex justify-between">
+          <HeaderText text={props.text} />
+          <Icon image={props.image} />
+        </div>
         <SubHeaderText text={props.subText} class="mb-5" />
         <div class="flex justify-end">
-          <Button text="View" />
+          <Button text={props.buttonText} onClick={props.onClick} />
         </div>
       </div>
     </>

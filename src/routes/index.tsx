@@ -16,7 +16,8 @@ export default component$(() => {
           <SubHeaderText class="text-xl font-bold text-gray-400" text={`Welcome back ${name.split(" ")[0]}!`} />
         </div>
       </header>
-      <MiniCard text="Portfolio" subText="View your portfolio" link="/portfolio" />
+      <MiniCard text="Watchlist" subText="View your favourited stocks" buttonText="View" image="/assets/icons/star.png" link="/" />
+      <MiniCard text="Trade History" subText="View your recent exchanges" buttonText="View" image={"/assets/icons/history.png"} link="/" />
       {/* example of using button component props to change button size or add a logo*/}
       <Button text="Logout" size={buttonSize.small} icon="/assets/logo-black.png" />
     </>
