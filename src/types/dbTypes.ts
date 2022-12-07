@@ -25,13 +25,40 @@ export interface Trade {
 
 export type WatchList = Stock[]
 
+export type TradeHistory = Trade[]
+
+export interface WalletStock extends Stock {
+  shares: number
+}
+
+export type Wallet = WalletStock[]
+
 export interface User {
   id: number
   name: string
   image?: string
   currency: Currency
-  wallet: number
-  highscore: number
+  wallet?: Wallet
+  money: number
+  highscore: number // for the quiz
   watchlist?: WatchList
-  tradeHistory?: Trade[]
+  tradeHistory?: TradeHistory
+}
+
+export interface Answer {
+  id: number
+  answer: string
+  isAnswer: boolean
+}
+
+export interface Question {
+  id: number
+  question: string
+  answers: Answer[]
+}
+
+export interface Quiz {
+  id: number
+  name: string
+  questions: Question[]
 }
