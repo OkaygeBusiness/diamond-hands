@@ -1,4 +1,5 @@
 // TODO: Implement this method
+import { Wallet } from "../types"
 
 export const formatCurrency = (value: number) => {
   return console.log("Method not implemented.")
@@ -10,4 +11,10 @@ export const calculateBrokerFee = (value: number) => {
 
 export const calculateTotal = (value: number, amount: number) => {
   return parseInt((value * amount + calculateBrokerFee(value * amount)).toFixed(2))
+}
+
+export const calculateWalletValue = (wallet: Wallet) => {
+  return wallet.reduce((acc, stock) => {
+    return acc + stock.price * stock.shares
+  }, 0)
 }

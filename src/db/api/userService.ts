@@ -1,5 +1,5 @@
 import { User } from "../../types/"
-import { users } from "../../db/users"
+import { users } from "../../db"
 
 export const getUsers = (): User[] => {
   return users
@@ -20,10 +20,10 @@ export const updateScore = (id: number, score: number): void => {
   }
 }
 
-export const resetWallet = (id: number): void => {
+export const resetMoney = (id: number): void => {
   const index = users.findIndex((u) => u.id === id)
   if (index !== -1) {
-    users[index].wallet = 10000
+    users[index].money = 10000
   }
 }
 
