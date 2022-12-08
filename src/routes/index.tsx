@@ -1,12 +1,21 @@
 import { $, component$ } from "@builder.io/qwik"
-
+import type { DocumentHead } from "@builder.io/qwik-city"
 import HeaderText from "../components/atoms/headerText/headerText"
 import SubHeaderText from "../components/atoms/subHeaderText/subHeaderText"
 import MiniCard from "../components/molecules/miniCard/miniCard"
+
+    
+        
+          
+    
+
+        
+    
+    @@ -26,13 +26,3 @@ export default component$(() => {
+  
 import BigCard from "../components/molecules/bigCard/bigCard"
 import * as UserService from "../db/api/userService"
 import { calculateWalletValue } from "../utils"
-
 export default component$(() => {
   const user = UserService.getUser(1)
   return (
@@ -26,3 +35,13 @@ export default component$(() => {
     </>
   )
 })
+
+export const head: DocumentHead = {
+  title: "Welcome to Diamond Hands",
+  meta: [
+    {
+      name: "description",
+      content: "A simple, lightweight, and fast web app for tracking your stock portfolio."
+    }
+  ]
+}
