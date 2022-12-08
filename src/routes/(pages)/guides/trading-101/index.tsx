@@ -1,9 +1,9 @@
 import { component$ } from "@builder.io/qwik";
+import { twMerge } from "tailwind-merge";
 import Header from "~/components/molecules/header/header";
 import HeaderText from "~/components/atoms/headerText/headerText";
 import Divider from "~/components/atoms/divider/divider";
-import TableOfContents from "~/components/organisims/tableOfContents/tableOfContents";
-
+import TableOfContents from "~/components/organisms/tableOfContents/tableOfContents";
 
 export default component$(() => {
 
