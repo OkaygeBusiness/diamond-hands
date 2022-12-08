@@ -18,7 +18,7 @@ export default component$((props: smallNewsProps) => {
   return (
     <>
       <a href={props.link}>
-        <div class="flex flex-row bg-white border rounded-lg shadow-md hover:bg-gray-100 mb-5">
+        <div class="flex flex-row bg-white border rounded-lg shadow-md hover:bg-gray-100 mb-2">
           <Icon class="object-cover w-40 rounded-l-lg" image={props.image} height="h-auto" />
           <div class="flex flex-col justify-between p-4 leading-normal">
             <HeaderText class="mb-2 text-sm font-bold tracking-tight text-gray-900 " text={props.headerText} size="text-xl" color="text-black"/>
@@ -26,7 +26,7 @@ export default component$((props: smallNewsProps) => {
           </div>
         </div>
       </a>
-      <hr class="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-400"></hr>
+      <hr class="my-2 mx-auto w-48 h-1 bg-gray-100 rounded border-0 dark:bg-gray-400"></hr>
     </>
   )
 })
