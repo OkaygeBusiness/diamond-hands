@@ -5,13 +5,13 @@ import SmallNews from "../../../components/molecules/smallNews/smallNews"
 
 export default component$(() => {
   return (
-    <div class="flex flex-col justify-center m-auto w-3/4">
+    <div class="flex flex-col justify-center m-auto w-3/4 mb-20">
       <Header text="Financial News" hasButton={false} />
       <div class="mb-10">
         <BigNews
-          link="https://news.yahoo.com/search-trump-storage-site-uncovers-162403585.html"
-          headerText="Search of Trump storage site uncovers classified docs"
-          text="Documents with classified markings have been discovered at former President Donald Trump's storage site in Florida, a person familiar with the matter said."
+          link="https://news.yahoo.com/classified-documents-found-search-trump-193946161.html"
+          headerText="Classified Documents Found in Search of Trump Storage Site"
+          text="Former President Donald Trump hired people to search four properties after being directed by a federal judge to look harder for any classified material still in his possession, and they found at least two documents with classified markings inside a sealed box in one of the locations, according to a person familiar with the matter."
           image="https://s.yimg.com/uu/api/res/1.2/_jTctqCL29eUFCggEo0PsQ--~B/Zmk9c3RyaW07aD00MDQ7cT05NTt3PTcyMDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2022-12/f3ba7440-7669-11ed-bfe7-95debe08fb9d.cf.webp"
         />
       </div>
@@ -29,9 +29,9 @@ export default component$(() => {
       />
       <SmallNews
         link="https://news.yahoo.com/homebuyers-underwater-mortgage-203707947.html"
-        headerText="People are getting sick with mystery illnesses and testing negative for COVID, RSV, and flu. Here's why."
+        headerText="Asian Stocks Feel the Weight of US Recession Fears: Markets Wrap"
         text="4hrs ago"
-        image="https://s.yimg.com/ny/api/res/1.2/08ZPaZBJa64nynisZlGXOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MA--/https://media.zenfs.com/en/insider_articles_922/82a80c8162ff743bd1a63b769c674252"
+        image="https://s.yimg.com/ny/api/res/1.2/4AalC6uaUgvY6oKlezcu2Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTM5Nw--/https://media.zenfs.com/en/bloomberg_markets_842/71520683e47ec8d014418623512ec3f9"
       />
     </div>
   )
