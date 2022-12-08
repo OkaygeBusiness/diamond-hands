@@ -17,7 +17,7 @@ export default component$((props: smallNewsProps) => {
   console.log(props.image)
   return (
     <>
-      <a href={props.link}>
+      <a href={props.link} target="_blank">
         <div class="flex flex-row bg-white border rounded-lg shadow-md hover:bg-gray-100 mb-2">
           <Icon class="object-cover w-40 rounded-l-lg" image={props.image} height="h-auto" />
           <div class="flex flex-col justify-between p-4 leading-normal">

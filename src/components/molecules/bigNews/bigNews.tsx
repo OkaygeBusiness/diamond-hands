@@ -16,7 +16,7 @@ export interface bigNewsProps {
 export default component$((props: bigNewsProps) => {
   console.log(props.image)
   return (
-    <a href={props.link}>
+    <a href={props.link} target="_blank">
     <div class="bg-white border border-gray-200 rounded-lg shadow-md">
       <Icon class="rounded-t-lg w-full" image={props.image} height="h-full" />
       <HeaderText class="mb-2 font-bold tracking-tight text-gray-900 p-5" size="text-2xl" text={props.headerText} color="text-black" />
