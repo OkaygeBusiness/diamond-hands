@@ -17,7 +17,7 @@ export default component$((props: bigNewsProps) => {
   console.log(props.image)
   return (
     <a href={props.link}>
-    <div class="w-2/4 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div class="bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
       <Icon class="rounded-t-lg w-full" image={props.image} height="h-full" />
       <HeaderText class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white p-3" size="text-2xl" text={props.headerText} color="text-black" />
 
