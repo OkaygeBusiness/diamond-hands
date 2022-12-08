@@ -54,6 +54,7 @@ export interface Answer {
 export interface Question {
   id: number
   question: string
+  image: string
   answers: Answer[]
 }
 
@@ -61,4 +62,5 @@ export interface Quiz {
   id: number
   name: string
   questions: Question[]
+  score: number
 }
