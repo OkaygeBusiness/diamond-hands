@@ -5,7 +5,7 @@ import SmallNews from "../../../components/molecules/smallNews/smallNews"
 
 export default component$(() => {
   return (
-    <div class="flex flex-col justify-center w-3/4">
+    <div class="flex flex-col justify-center m-auto w-3/4">
       <Header text="Financial News" hasButton={false} />
       <div class="mb-10">
         <BigNews
