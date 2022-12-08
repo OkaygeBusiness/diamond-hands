@@ -2,17 +2,7 @@ import { $, component$ } from "@builder.io/qwik"
 import type { DocumentHead } from "@builder.io/qwik-city"
 import HeaderText from "../components/atoms/headerText/headerText"
 import SubHeaderText from "../components/atoms/subHeaderText/subHeaderText"
-import MiniCard from "../components/molecules/miniCard/miniCard"
-
-    
-        
-          
-    
-
-        
-    
-    @@ -26,13 +26,3 @@ export default component$(() => {
-  
+import MiniCard from "../components/molecules/miniCard/miniCard"  
 import BigCard from "../components/molecules/bigCard/bigCard"
 import * as UserService from "../db/api/userService"
 import { calculateWalletValue } from "../utils"
