@@ -24,14 +24,14 @@ export const users: User[] = [
         price: 26.24,
         date: "2022-10-10",
         brokerFee: 81.5,
-        ammount: 69
+        amount: 69
       },
       {
         stock: { id: 2, name: "Apple", shortName: "AAPL", price: 1132.13, logo: "/assets/stocks/apple.png" },
         price: 1132.13,
         date: "2022-10-10",
         brokerFee: 45.29,
-        ammount: 2
+        amount: 2
       }
     ]
   },
