@@ -1,10 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 import { twMerge } from "tailwind-merge";
 import HeaderText from "~/components/atoms/headerText/headerText";
-import Link from "~/components/atoms/link/link";
 
 export interface tableOfContentsProps {
   class?: string;
+  title?: string;
   subheadings?: string[];
 };
 
@@ -18,7 +18,7 @@ export default component$((props: tableOfContentsProps) => {
             return (
               <tr>
                 <td>
-                  <Link href={`#${subheading.replace(/\s+/g, '-')}`} text={subheading} color={"text-blue-500"} />
+                  <a href={`/guides/${props.title}#${subheading.replace(/\s+/g, '-')}`} class={"text-blue-500"}>{subheading}</a>
                 </td>
               </tr>
             );

@@ -11,10 +11,10 @@ export default component$(() => {
       <HeaderText text={"Guides"} color={"text-black"} size={"text-3xl"} />
       <Divider class={"my-2"} thickness={"h-1"} />
       <GuideAndGameCard 
-        title={"Trading 101"}
+        title={"Trading Basics"}
         backgroundImage={"https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f"}
         action={"Read"}
-        href={"/guides/trading-101"} />
+        href={"/guides/trading-basics"} />
       <GuideAndGameCard 
         title={"Market Patterns"}
         backgroundImage={"https://images.unsplash.com/photo-1535320903710-d993d3d77d29"}

@@ -64,3 +64,14 @@ export interface Quiz {
   questions: Question[]
   score: number
 }
+
+export interface GuideSection {
+  title: string
+  content: string
+  imageBefore?: string
+  imageBeforeAlt?: string
+  imageAfter?: string
+  imageAfterAlt?: string
+}
+
+export type Guide = GuideSection[]
