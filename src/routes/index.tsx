@@ -1,5 +1,5 @@
 import { $, component$ } from "@builder.io/qwik"
-import type { DocumentHead } from "@builder.io/qwik-city"
+
 import HeaderText from "../components/atoms/headerText/headerText"
 import SubHeaderText from "../components/atoms/subHeaderText/subHeaderText"
 import MiniCard from "../components/molecules/miniCard/miniCard"
@@ -26,13 +26,3 @@ export default component$(() => {
     </>
   )
 })
-
-export const head: DocumentHead = {
-  title: "Welcome to Diamond Hands",
-  meta: [
-    {
-      name: "description",
-      content: "A simple, lightweight, and fast web app for tracking your stock portfolio."
-    }
-  ]
-}
