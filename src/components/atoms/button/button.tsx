@@ -13,7 +13,7 @@ export interface buttonProps {
   color?: string
   size?: buttonSize
   type?: "button" | "submit" | "reset"
-  onClick?: (event: QwikMouseEvent) => void
+  onClick$?: (event: QwikMouseEvent) => void
   disabled?: boolean
   icon?: string
   class?: string
@@ -30,7 +30,7 @@ export default component$((props: buttonProps) => {
       )}
       type={props.type ?? "button"}
       onClick$={
-        props.onClick ??
+        props.onClick$ ??
         $(() => {
           console.log("Button clicked")
         })
