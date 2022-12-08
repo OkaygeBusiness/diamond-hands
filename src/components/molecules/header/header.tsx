@@ -14,7 +14,7 @@ export interface headerProps {
 export default component$((props: headerProps) => {
   return (
     <>
-      <div class="fixed inset-x-0 top-0">
+      <div class="fixed inset-x-0 top-0 z-10">
         <div class={twMerge(props.class, "flex py-12 justify-between bg-darkBlue")}>
           <div>
             {props.hasButton && (

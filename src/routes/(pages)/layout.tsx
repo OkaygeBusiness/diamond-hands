@@ -5,7 +5,7 @@ export default component$(() => {
     <>
       <main>
         <section>
-          <div class="mt-40">
+          <div class="mt-40 mb-24">
             <Slot />
           </div>
         </section>
