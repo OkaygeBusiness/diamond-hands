@@ -2,11 +2,10 @@ import { $, component$ } from "@builder.io/qwik"
 import type { DocumentHead } from "@builder.io/qwik-city"
 import HeaderText from "../components/atoms/headerText/headerText"
 import SubHeaderText from "../components/atoms/subHeaderText/subHeaderText"
-import MiniCard from "../components/molecules/miniCard/miniCard"
+import MiniCard from "../components/molecules/miniCard/miniCard"  
 import BigCard from "../components/molecules/bigCard/bigCard"
 import * as UserService from "../db/api/userService"
 import { calculateWalletValue } from "../utils"
-
 export default component$(() => {
   const user = UserService.getUser(1)
   return (

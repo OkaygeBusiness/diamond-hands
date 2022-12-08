@@ -14,14 +14,13 @@ export interface smallNewsProps {
 }
 
 export default component$((props: smallNewsProps) => {
-  console.log(props.image)
   return (
     <>
       <a href={props.link} target="_blank">
         <div class="flex flex-row bg-white border rounded-lg shadow-md hover:bg-gray-100 mb-2">
-          <Icon class="object-cover w-40 rounded-l-lg" image={props.image} height="h-auto" />
+          <Icon class="object-cover w-0 lg:w-80 rounded-l-lg" image={props.image} height="h-auto" />
           <div class="flex flex-col justify-between p-4 leading-normal">
-            <HeaderText class="mb-2 text-sm font-bold tracking-tight text-gray-900 " text={props.headerText} size="text-xl" color="text-black"/>
+            <HeaderText class="mb-2 text-sm font-bold tracking-tight text-gray-900 " text={props.headerText} size="text-xl" color="text-black" />
             <SubHeaderText class="mb-3 font-normal text-gray-700 " text={props.text} size="text-xs" />
           </div>
         </div>
