@@ -16,7 +16,7 @@ export default component$(() => {
       \n⠀\nLikewise, when the market is experiencing decline, or is expected to decline, we call this trend bearish, or a bear market. The stock market is always moving in one of these two directions, and it is important to understand which direction the market is moving in order to make profitable trades.
       \n⠀\nTrends generally follow the performance of the S&P 500, a collection of the 500 largest traded companies listed on the US Stock Exchange. Paying attention to the performance of the S&P 500 is a good way to get a general idea of the direction of the market.
       `,
-    imageBefore: "https://images.unsplash.com/photo-1563986768711-b3bde3dc821e",
+    imageBefore: "https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80",
     imageBeforeAlt: "Image 1: Stock market performance graph"
   };
   

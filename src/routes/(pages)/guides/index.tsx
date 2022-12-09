@@ -12,13 +12,13 @@ export default component$(() => {
       <Divider class={"my-2"} thickness={"h-1"} />
       <GuideAndGameCard
         title={"Trading Basics"}
-        backgroundImage={"https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f"}
+        backgroundImage={"https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"}
         action={"Read"}
         href={"/guides/trading-basics"}
       />
       <GuideAndGameCard
         title={"Market Patterns"}
-        backgroundImage={"https://images.unsplash.com/photo-1535320903710-d993d3d77d29"}
+        backgroundImage={"https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"}
         action={"Read"}
         href={"/guides/market-patterns"}
       />
@@ -27,12 +27,11 @@ export default component$(() => {
       <Divider class={"my-2"} thickness={"h-1"} />
       <GuideAndGameCard
         title={"Market Patterns Quiz"}
-        backgroundImage={"https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3"}
+        backgroundImage={"https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"}
         action={"Play"}
         difficulty={"Easy"}
         href={"/guides/quiz"}
       />
-      {/* <PageBottom /> */}
     </>
   )
 })
