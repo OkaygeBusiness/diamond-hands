@@ -21,6 +21,7 @@ export interface Trade {
   date: string
   brokerFee: number
   amount: number
+  action: string
 }
 
 export type WatchList = Stock[]
