@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik"
-import { twMerge } from "tailwind-merge"
 import HeaderText from "../../atoms/headerText/headerText"
 import SubHeaderText from "../../atoms/subHeaderText/subHeaderText"
 import Icon from "../../atoms/icon/icon"

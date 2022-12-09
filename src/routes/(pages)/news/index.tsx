@@ -1,4 +1,4 @@
-import { $, component$ } from "@builder.io/qwik"
+import { component$ } from "@builder.io/qwik"
 import Header from "../../../components/molecules/header/header"
 import BigNews from "../../../components/molecules/bigNews/bigNews"
 import SmallNews from "../../../components/molecules/smallNews/smallNews"

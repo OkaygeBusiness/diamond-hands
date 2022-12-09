@@ -1,4 +1,4 @@
-import { Quiz, Question, Answer } from "../../types"
+import { Quiz, Question } from "../../types"
 import { quizzes } from "../../db"
 
 export const getQuizzes = (): Quiz[] => {

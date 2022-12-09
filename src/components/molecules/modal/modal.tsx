@@ -1,5 +1,4 @@
-import { $, component$, PropFunction, QwikMouseEvent } from "@builder.io/qwik"
-import { twMerge } from "tailwind-merge"
+import { component$, PropFunction } from "@builder.io/qwik"
 import Button from "~/components/atoms/button/button"
 
 export interface modalProps {
@@ -28,13 +27,15 @@ export default component$((props: modalProps) => {
             class="w-1/2 px-4 py-3 text-center hover:bg-gray-200 hover:text-black font-bold rounded-lg text-sm"
             text={props.buttonCancel ?? "Cancel"}
             color="bg-gray-100 text-gray-400"
-            onClick$={() => {props.cancelOnClick$ ?? console.log("Cancel Clicked")}}
+            onClick$={() => {
+              props.cancelOnClick$ ?? console.log("Cancel Clicked")
+            }}
           />
           <Button
             class="w-1/2 px-4 py-3 text-center rounded-lg hover:bg-red-700 hover:text-white font-bold text-sm"
             text={props.buttonConfirm ?? "Confirm"}
             color="bg-red-600 text-white"
-            onClick$={() =>props.confirmOnClick$ ?? console.log("Reset Wallet Clicked")}
+            onClick$={() => console.log("Reset Wallet Clicked")}
           />
         </div>
       </div>

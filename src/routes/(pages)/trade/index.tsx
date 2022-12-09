@@ -22,8 +22,9 @@ export default component$(() => {
   useWatch$(async ({ track }) => {
     const searchInput = track(() => store.searchInput)
     store.stocks = getStocks().filter((stock) => {
-      let results = new Set().add(stock.name.toLowerCase().includes(searchInput.toLowerCase()))
-      .add(stock.shortName.toLowerCase().includes(searchInput.toLowerCase()))
+      const results = new Set()
+        .add(stock.name.toLowerCase().includes(searchInput.toLowerCase()))
+        .add(stock.shortName.toLowerCase().includes(searchInput.toLowerCase()))
       return Array.from(results).includes(true)
     })
   })
@@ -62,16 +63,28 @@ export default component$(() => {
               filterToggle.isFilterOpen = !filterToggle.isFilterOpen
 
               if (filterToggle.isFilterOpen) {
-                store.stocks = getStocks().filter((stock) => stock.name.toLowerCase().includes(store.searchInput.toLowerCase())).sort((a, b) => (a.price > b.price ? 1 : -1))
+                store.stocks = getStocks()
+                  .filter((stock) => stock.name.toLowerCase().includes(store.searchInput.toLowerCase()))
+                  .sort((a, b) => (a.price > b.price ? 1 : -1))
               } else {
-                store.stocks = getStocks().filter((stock) => stock.name.toLowerCase().includes(store.searchInput.toLowerCase())).sort((a, b) => (a.price < b.price ? 1 : -1))
+                store.stocks = getStocks()
+                  .filter((stock) => stock.name.toLowerCase().includes(store.searchInput.toLowerCase()))
+                  .sort((a, b) => (a.price < b.price ? 1 : -1))
               }
             }}
           />
         </div>
       </div>
       {store.stocks.map((item: Stock) => (
-        <BigCard key={item.id} text={`${item.price.toString()}$`} headerText={item.shortName} gain={((Math.random()*10).toFixed(2)).toString() + "%"} isPositive={!Math.round(Math.random())} buttonText={"Buy"} link={`/stock/${item.id}`}  />
+        <BigCard
+          key={item.id}
+          text={`${item.price.toString()}$`}
+          headerText={item.shortName}
+          gain={(Math.random() * 10).toFixed(2).toString() + "%"}
+          isPositive={!Math.round(Math.random())}
+          buttonText={"Buy"}
+          link={`/stock/${item.id}`}
+        />
       ))}
     </>
   )

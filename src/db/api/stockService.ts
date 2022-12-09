@@ -2,7 +2,6 @@ import { Stock } from "../../types"
 import { stocks } from "../../db"
 import * as UserService from "./userService"
 import { calculateBrokerFee, calculateTotal } from "../../utils"
-import { QwikMouseEvent } from "@builder.io/qwik"
 
 export const getStocks = (): Stock[] => {
   return stocks
