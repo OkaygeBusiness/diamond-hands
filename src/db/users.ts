@@ -35,11 +35,7 @@ export const users: User[] = [
       }
     ]
   },
-  { id: 2, name: "Jane Doe", currency: Currency.USD, money: 10000, highscore: 0, watchlist: [] },
-  { id: 3, name: "Will Smith", currency: Currency.CAD, money: 10000, highscore: 0, watchlist: [] },
-  { id: 4, name: "Tom Cruise", currency: Currency.EUR, money: 10000, highscore: 0, watchlist: [] },
-  { id: 5, name: "Brad Pitt", currency: Currency.GBP, money: 10000, highscore: 0, watchlist: [] },
-  { id: 6, name: "Angelina Jolie", currency: Currency.AUD, money: 10000, highscore: 0, watchlist: [] },
-  { id: 7, name: "Leonardo DiCaprio", currency: Currency.JPY, money: 10000, highscore: 0, watchlist: [] },
-  { id: 8, name: "Scarlett Johansson", currency: Currency.USD, money: 10000, highscore: 0, watchlist: [] }
+  { id: 2, name: "Jane Doe", image: "/assets/users/jane.jpg", currency: Currency.USD, money: 10000, highscore: 200, watchlist: [] },
+  { id: 3, name: "Will Smith", image: "/assets/users/will.jpg", currency: Currency.CAD, money: 10000, highscore: 180, watchlist: [] },
+  { id: 4, name: "Tom Cruise", image: "/assets/users/tom.jpg", currency: Currency.EUR, money: 10000, highscore: 100, watchlist: [] }
 ]
