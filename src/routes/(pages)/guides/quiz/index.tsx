@@ -36,14 +36,12 @@ export default component$(() => {
     }
   })
   const handleShowModal = $(() => {
-    if (store.correct) {
-      store.page++
-    }
+    store.page++
+    store.showModal = false
     if (store.page === 5) {
       UserService.updateScore(user!.id, store.score)
       store.endOfQuiz = true
     }
-    store.showModal = false
   })
   return (
     <div class="flex flex-col justify-center">
@@ -51,7 +49,11 @@ export default component$(() => {
       {store.endOfQuiz ? (
         <QuizResult name={user!.name} score={store.score} image={user!.image} />
       ) : store.showModal ? (
-        <QuizModal text={`Your current score is ${store.score}`} isCorrect={store.correct} onClick$={() => handleShowModal()} />
+        <QuizModal
+          text={store.correct ? `Your current score is ${store.score}` : `${store.questions[store.page]?.explanation}`}
+          isCorrect={store.correct}
+          onClick$={() => handleShowModal()}
+        />
       ) : (
         <>
           <div class="flex justify-center mb-6">
