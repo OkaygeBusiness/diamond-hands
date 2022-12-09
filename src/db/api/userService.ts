@@ -42,13 +42,6 @@ export const deleteUser = (id: number): void => {
   }
 }
 
-export const updateScorte = (id: number, score: number): void => {
-  const index = users.findIndex((u) => u.id === id)
-  if (index !== -1) {
-    users[index].highscore = score
-  }
-}
-
 export const getUserTradeHistory = (id: number): TradeHistory | undefined => {
   const user = getUser(id)
   return user ? user.tradeHistory : []
