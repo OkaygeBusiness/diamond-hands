@@ -18,6 +18,7 @@ export default component$(() => {
       <HeaderText text="Top 10 Stocks" color="text-black" />
       {store.stocks.map((item: Wsb) => (
         <BigCard
+          key={item.ticker}
           text={item.ticker}
           headerText={item.sentiment}
           gain={item.sentiment_score.toString()}
