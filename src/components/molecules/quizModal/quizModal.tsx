@@ -15,14 +15,16 @@ export default component$((props: quizModalProps) => {
       {props.isCorrect ? (
         <div class="flex flex-col justify-center items-center">
           <SubHeaderText text="Correct!" size="text-2xl" weight="font-bold" color="text-green-400" />
-          <div class="border-2 border-black">
+          <div class="border-2 border-black p-3 m-8">
             <BodyText text={props.text} class="text-center" />
           </div>
         </div>
       ) : (
         <div class="flex flex-col justify-center items-center">
           <SubHeaderText text="Incorrect!" size="text-2xl" weight="font-bold" color="text-red-400" />
-          <BodyText text={props.text} class="text-center" />
+          <div class="border-2 border-black p-3 m-8">
+            <BodyText text={props.text} class="text-center" />
+          </div>
         </div>
       )}
       <div class="flex justify-center">
