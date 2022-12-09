@@ -1,4 +1,4 @@
-import { $, component$, QwikMouseEvent } from "@builder.io/qwik"
+import { $, component$, PropFunction } from "@builder.io/qwik"
 import { twMerge } from "tailwind-merge"
 import SettingIcon from "../../atoms/settingIcon/settingIcon"
 import SettingOptionText from "../../atoms/settingOptionText/settingOptionText"
@@ -8,7 +8,7 @@ export interface settingOptionProps {
   description?: string
   path?: string
   path2?: string
-  onClick$?: (event: QwikMouseEvent) => void
+  onClick$?: PropFunction<() => void>
   class?: string
   textColor?: string
 }

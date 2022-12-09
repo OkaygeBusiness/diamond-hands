@@ -1,4 +1,4 @@
-import { $, component$, QwikMouseEvent } from "@builder.io/qwik"
+import { $, component$, PropFunction } from "@builder.io/qwik"
 import { twMerge } from "tailwind-merge"
 
 export enum buttonSize {
@@ -13,7 +13,7 @@ export interface buttonProps {
   color?: string
   size?: buttonSize
   type?: "button" | "submit" | "reset"
-  onClick$?: (event: QwikMouseEvent) => void
+  onClick$?: PropFunction<() => void>
   disabled?: boolean
   icon?: string
   class?: string
