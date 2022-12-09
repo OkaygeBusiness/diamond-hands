@@ -71,7 +71,7 @@ export default component$(() => {
         </div>
       </div>
       {store.stocks.map((item: Stock) => (
-        <BigCard key={item.id} text={`${item.price.toString()}$`} headerText={item.shortName} gain={"0"} isPositive={true} buttonText={"Buy"} link={`/stock/${item.id}`}  />
+        <BigCard key={item.id} text={`${item.price.toString()}$`} headerText={item.shortName} gain={((Math.random()*10).toFixed(2)).toString() + "%"} isPositive={!Math.round(Math.random())} buttonText={"Buy"} link={`/stock/${item.id}`}  />
       ))}
     </>
   )
