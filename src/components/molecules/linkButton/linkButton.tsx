@@ -7,7 +7,8 @@ export enum buttonSize {
   xsmall = "min-w-6 py-1 px-2 text-xs",
   small = "min-w-12 py-1 px-2 text-sm",
   medium = "min-w-24 py-2 px-4 text-base",
-  large = "min-w-36 py-3 px-6 text-lg"
+  large = "min-w-36 py-3 px-6 text-lg",
+  widepeepo = "min-w-20 py-2 px-20 text-base"
 }
 
 export interface buttonProps {
