@@ -19,10 +19,12 @@ export default component$(() => {
     endOfQuiz: false,
     score: 0
   })
-  useMount$(async () => {
-    const questions = await QuizService.getQuestions(1)
-    store.questions = questions
-  })
+  if (typeof window !== "undefined") {
+    useMount$(async () => {
+      const questions = await QuizService.getQuestions(1)
+      store.questions = questions
+    })
+  }
   const handleAnswer = $((id: number) => {
     if (store.questions[store.page]?.answers[id - 1]?.isAnswer) {
       store.correct = true
