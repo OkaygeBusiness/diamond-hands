@@ -26,7 +26,7 @@ export default component$((props: accordionProps) => {
       <summary id={selectorId} class="my-3 text-xl">{props.title}<Divider class={"my-2"} thickness={"h-0.5"} /></summary>
       <div>
         { props.imageBefore ? <ImageCard src={props.imageBefore} altText={props.imageBeforeAlt} /> : null }
-        <p class={props.textDecoration}>{text}</p>
+        <p class={twMerge(props.textDecoration, "mb-5")}>{text}</p>
         { props.imageAfter ? <ImageCard src={props.imageAfter} altText={props.imageAfterAlt} /> : null }
       </div>
     </details>

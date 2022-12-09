@@ -29,7 +29,6 @@ export default component$(() => {
         action={"Play"}
         difficulty={"Easy"}
         href={"/quiz/market-patterns"} />
-      {/* <PageBottom /> */}
     </>
   )
 });
