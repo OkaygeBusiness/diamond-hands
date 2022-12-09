@@ -56,6 +56,7 @@ export interface Question {
   question: string
   image: string
   answers: Answer[]
+  explanation: string
 }
 
 export interface Quiz {

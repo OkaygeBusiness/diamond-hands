@@ -25,7 +25,9 @@ export const quizzes: Quiz[] = [
             answer: "Exhaustion gap",
             isAnswer: false
           }
-        ]
+        ],
+        explanation:
+          "A breakaway gap occurs when the price moves beyond its usual range - there is usually a lot of momentum with this move, and we don't expect this gap to fill in the near future."
       },
       {
         id: 2,
@@ -47,7 +49,9 @@ export const quizzes: Quiz[] = [
             answer: "C",
             isAnswer: false
           }
-        ]
+        ],
+        explanation:
+          "A horn bottom is recognized by two longer than usual downward wicks, separated by a smaller weekly candlestick. It signals a reversal, with entry when the price breaks above the top of the two larger candles."
       },
       {
         id: 3,
@@ -69,7 +73,9 @@ export const quizzes: Quiz[] = [
             answer: "C",
             isAnswer: false
           }
-        ]
+        ],
+        explanation:
+          "The target for a flag pattern is usually equal to the distance of the move ahead of the pattern. This could be described as the 'flag pole' (think of the flag as flying at half mast)."
       },
       {
         id: 4,
@@ -86,7 +92,9 @@ export const quizzes: Quiz[] = [
             answer: "No",
             isAnswer: false
           }
-        ]
+        ],
+        explanation:
+          "The double top pattern isn't complete until the neckline has been broken (i.e. the price has dropped below the valley between the two tops)."
       },
       {
         id: 5,
@@ -108,7 +116,8 @@ export const quizzes: Quiz[] = [
             answer: "Flag",
             isAnswer: false
           }
-        ]
+        ],
+        explanation: "A pennant pattern forms after a strong move, followed by a tight continuation pattern in a narrowing range."
       }
     ],
     score: 0
