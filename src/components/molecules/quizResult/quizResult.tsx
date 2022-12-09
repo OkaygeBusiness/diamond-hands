@@ -16,7 +16,7 @@ export default component$((props: quizResultProps) => {
     <>
       <div class="flex flex-col justify-center items-center">
         <div class="flex justify-center">
-          <Icon image={props.image} class="w-64 rounded-full" height="h-auto" />
+          <Icon image={props.image} class="w-60 rounded-full border-black border-2" height="h-auto" />
         </div>
         <div class="flex justify-center">
           <HeaderText text="Congratulations! 🎉" size="text-3xl" color="text-green-400" />
@@ -29,7 +29,7 @@ export default component$((props: quizResultProps) => {
         </div>
         <div class="flex justify-center">
           <LinkButton text="Home" link="/" />
-          <LinkButton text="Leaderboard" link="/leaderboard" />
+          <LinkButton text="Leaderboard" link="/guides/quiz/leaderboard" />
           <LinkButton text="Guides" link="/guides" />
         </div>
       </div>
