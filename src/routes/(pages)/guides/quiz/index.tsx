@@ -40,6 +40,7 @@ export default component$(() => {
       store.page++
     }
     if (store.page === 5) {
+      UserService.updateScore(user!.id, store.score)
       store.endOfQuiz = true
     }
     store.showModal = false
