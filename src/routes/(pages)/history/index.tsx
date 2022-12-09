@@ -13,11 +13,13 @@ export default component$(() => {
   })
   return (
     <>
-      <Header text="TradeHistory" hasButton={true} />
+      <Header text="Trade History" hasButton={true} />
       {store.history?.map((trade) => {
         return (
           <div>
             <div>{trade.stock.name}</div>
+            <div>{trade.stock.shortName}</div>
+            <div>{trade.stock.price}</div>
             <div>{trade.date}</div>
             <div>{trade.amount}</div>
             <div>{trade.brokerFee}</div>

@@ -19,7 +19,7 @@ export default component$(() => {
       </header>
       <BigCard headerText="Value" text={`${calculateWalletValue(user!.wallet!).toString()}$`} buttonText="Stocks" gain="7.27%" isPositive={true} />
       <MiniCard text="Watchlist" subText="View your favourited stocks" buttonText="View" image="/assets/icons/star.png" link="/watchlist" />
-      <MiniCard text="Trade History" subText="View your recent exchanges" buttonText="View" image={"/assets/icons/history.png"} link="/" />
+      <MiniCard text="Trade History" subText="View your recent exchanges" buttonText="View" image={"/assets/icons/history.png"} link="/history" />
     </>
   )
 })
