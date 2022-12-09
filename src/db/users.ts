@@ -23,15 +23,25 @@ export const users: User[] = [
         stock: { id: 1, name: "NVIDIA Corporation", shortName: "NVDA", price: 26.24, logo: "/assets/stocks/nvidia.png" },
         price: 26.24,
         date: "2022-10-10",
-        brokerFee: 81.5,
-        amount: 69
+        brokerFee: 0.85,
+        amount: 69,
+        action: "buy"
       },
       {
         stock: { id: 2, name: "Apple Inc.", shortName: "AAPL", price: 1132.13, logo: "/assets/stocks/apple.png" },
         price: 1132.13,
         date: "2022-10-10",
         brokerFee: 45.29,
-        amount: 2
+        amount: 2,
+        action: "buy"
+      },
+      {
+        stock: { id: 3, name: "Microsoft Corporation", shortName: "MSFT", price: 245.12, logo: "/assets/stocks/microsoft.png" },
+        price: 245.12,
+        date: "2022-10-12",
+        brokerFee: 4.29,
+        amount: 2,
+        action: "sell"
       }
     ]
   },
