@@ -9,12 +9,11 @@ export default component$(() => {
   const store = useStore({
     history: [] as TradeHistory | undefined
   })
-  if (typeof window !== "undefined") {
-    useMount$(() => {
-      const history = UserService.getUserTradeHistory(1)
-      store.history = history
-    })
-  }
+  useMount$(() => {
+    const history = UserService.getUserTradeHistory(1)
+    store.history = history
+  })
+
   return (
     <div class="w-[350px] relative right-2 top-2 mt-2">
       <Header text="Trade History" hasButton={true} />

@@ -9,11 +9,9 @@ export default component$(() => {
   const store = useStore({
     stocks: [] as Wsb[]
   })
-  if (typeof window !== "undefined") {
-    useMount$(async () => {
-      store.stocks = await wsb()
-    })
-  }
+  useMount$(async () => {
+    store.stocks = await wsb()
+  })
   return (
     <>
       <Header text="Popular" hasButton={true} />

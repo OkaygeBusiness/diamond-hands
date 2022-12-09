@@ -10,11 +10,9 @@ export default component$(() => {
   const store = useStore({
     watchlist: [] as WatchList
   })
-  if (typeof window !== "undefined") {
-    useMount$(async () => {
-      store.watchlist = user!.watchlist!
-    })
-  }
+  useMount$(async () => {
+    store.watchlist = user!.watchlist!
+  })
 
   const removeStock = $((id: number) => {
     store.watchlist = store.watchlist.filter((stock: Stock) => stock.id !== id)
