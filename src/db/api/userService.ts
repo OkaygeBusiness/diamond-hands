@@ -1,4 +1,4 @@
-import { User } from "../../types/"
+import { User, TradeHistory } from "../../types/"
 import { users } from "../../db"
 
 export const getUsers = (): User[] => {
@@ -47,4 +47,9 @@ export const updateScorte = (id: number, score: number): void => {
   if (index !== -1) {
     users[index].highscore = score
   }
+}
+
+export const getUserTradeHistory = (id: number): TradeHistory | undefined => {
+  const user = getUser(id)
+  return user ? user.tradeHistory : []
 }
