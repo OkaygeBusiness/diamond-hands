@@ -14,10 +14,11 @@ export default component$(() => {
   const filterToggle = useStore({
     isFilterOpen: false
   })
-
-  useMount$(async () => {
-    store.stocks = getStocks()
-  })
+  if (typeof window !== "undefined") {
+    useMount$(async () => {
+      store.stocks = getStocks()
+    })
+  }
 
   useWatch$(async ({ track }) => {
     const searchInput = track(() => store.searchInput)

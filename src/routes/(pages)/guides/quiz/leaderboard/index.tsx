@@ -10,10 +10,12 @@ export default component$(() => {
   const store = useStore({
     users: [] as User[]
   })
-  useMount$(() => {
-    const users = UserService.getUsers()
-    store.users = users
-  })
+  if (typeof window !== "undefined") {
+    useMount$(() => {
+      const users = UserService.getUsers()
+      store.users = users
+    })
+  }
 
   return (
     <>
