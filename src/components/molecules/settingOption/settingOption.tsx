@@ -22,7 +22,7 @@ export default component$((props: settingOptionProps) => {
           console.log("Button clicked")
         })
       }
-      class={props.class ?? "px-4 py-10 hover:bg-gray-100 flex"}
+      class={props.class ?? "px-4 py-10 hover:bg-gray-100 flex block w-full"}
     >
       <SettingIcon path={props.path ?? ""} path2={props.path2 ?? ""} />
       <SettingOptionText color={props.textColor} title={props.title ?? "Title"} description={props.description ?? ""} />
