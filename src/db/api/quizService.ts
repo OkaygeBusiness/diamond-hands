@@ -10,7 +10,7 @@ export const getQuiz = (id: number): Quiz | undefined => {
   return quizzes.find((quiz) => quiz.id === id)
 }
 
-export const getQuestions = (quizId: number): Question[] => {
+export const getQuestions = async (quizId: number): Promise<Question[]> => {
   const quiz = getQuiz(quizId)
   return quiz ? quiz.questions : []
 }
