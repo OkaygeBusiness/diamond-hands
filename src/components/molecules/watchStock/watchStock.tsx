@@ -14,7 +14,7 @@ export interface watchStockProps {
 export default component$((props: watchStockProps) => {
   return (
     <div class="flex my-4 justify-between">
-      <Icon image={props.stock.logo} height="w-16" />
+      <Icon image={props.stock.logo} class="w-12 -mr-20 mt-4" height="h-12" />
       <div class="flex flex-col w-3">
         <BodyText text={props.stock.name} />
         <BodyText text={props.stock.shortName} color="text-gray-500" />
