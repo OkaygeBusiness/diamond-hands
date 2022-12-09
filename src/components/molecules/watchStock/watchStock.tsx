@@ -1,4 +1,4 @@
-import { component$, QwikMouseEvent } from "@builder.io/qwik"
+import { component$, PropFunction } from "@builder.io/qwik"
 import Icon from "../../atoms/icon/icon"
 import BodyText from "../../atoms/bodyText/bodyText"
 import { Stock } from "../../../types"
@@ -7,7 +7,7 @@ export interface watchStockProps {
   stock: Stock
   change: string
   isPositive?: boolean
-  onClick?: (event: QwikMouseEvent) => void
+  onClick$?: PropFunction<() => void>
   class?: string
 }
 
@@ -24,7 +24,7 @@ export default component$((props: watchStockProps) => {
         <BodyText text={props.change} color={props.isPositive ? "text-green-500" : "text-red-500"} />
       </div>
       <div class="flex flex-col w-6 justify-center">
-        <Icon image="/assets/icons/x.png" onClick={props.onClick} />
+        <Icon image="/assets/icons/x.png" onClick$={props.onClick$} />
       </div>
     </div>
   )

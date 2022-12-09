@@ -41,3 +41,10 @@ export const deleteUser = (id: number): void => {
     users.splice(index, 1)[0]
   }
 }
+
+export const updateScorte = (id: number, score: number): void => {
+  const index = users.findIndex((u) => u.id === id)
+  if (index !== -1) {
+    users[index].highscore = score
+  }
+}
