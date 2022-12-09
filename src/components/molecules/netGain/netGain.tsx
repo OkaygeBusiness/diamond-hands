@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik"
 import Icon from "../../atoms/icon/icon"
 import BodyText from "../../atoms/bodyText/bodyText"
-import { twMerge } from "tailwind-merge"
 
 export interface netGainProps {
   text: string

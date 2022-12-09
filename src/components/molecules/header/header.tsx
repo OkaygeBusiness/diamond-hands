@@ -1,4 +1,4 @@
-import { $, component$, QwikMouseEvent } from "@builder.io/qwik"
+import { component$ } from "@builder.io/qwik"
 import { twMerge } from "tailwind-merge"
 import LinkButton from "../linkButton/linkButton"
 import HeaderText from "../../atoms/headerText/headerText"

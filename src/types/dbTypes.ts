@@ -38,7 +38,7 @@ export interface User {
   id: number
   name: string
   image?: string
-  currency: Currency
+  currency: string
   wallet?: Wallet
   money: number
   highscore: number // for the quiz
