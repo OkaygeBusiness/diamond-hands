@@ -6,7 +6,7 @@ export default component$(() => {
     <>
       <main>
         <section>
-          <div class="container mx-auto my-8 w-4/5">
+          <div class="container mx-auto my-8 w-4/5 mb-24">
             <Slot />
           </div>
         </section>
