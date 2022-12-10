@@ -19,9 +19,9 @@ export default component$((props: guideAndGameCardProps) => {
 
   return (
     <Link href={props.href}>
-      <div class={"h-60 flex flex-col justify-center"}>
+      <div class={"h-60 flex flex-col justify-center mb-3 mt-5"}>
         { props.difficulty ? <p class={"relative text-white top-11 left-3 z-10"}>Difficulty: {props.difficulty}</p> : <Divider class={"my-2"} color={""} /> }
-        <img src={props.backgroundImage} class={twMerge("mt-3 rounded-xl w-fit h-60 brightness-[0.65]")} />
+        <img src={props.backgroundImage} class={twMerge("rounded-xl h-60 brightness-[0.65]")} />
         <div class={"flex flex-row justify-between"}>
           <SubHeaderText text={props.title} color={"text-white"} size={"text-2xl"} class={"relative left-3 bottom-10 z-2"} />
           <p class={"text-white relative bottom-8 right-3"}>{props.action} &gt;</p>

@@ -13,6 +13,7 @@ export interface Stock {
   shortName: string
   price: number
   logo: string
+  description?: string
 }
 
 export interface Trade {

@@ -44,7 +44,7 @@ export default component$(() => {
           <Divider class={"my-2"} thickness={"h-1"} />
           <BodyText
             class="mb-4"
-            text={`${data.name} Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugit optio totam eius unde ullam consectetur hic quibusdam nobis doloremque dignissimos, officiis eaque autem aliquid accusamus obcaecati. Illum, suscipit veritatis!`}
+            text={`${data.description}`}
           />
           <div class="flex justify-center">
             <LinkButton text="Make an Order" link={`/stock/${data.id}/trade`} size={buttonSize.widepeepo} />

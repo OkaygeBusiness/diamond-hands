@@ -22,7 +22,7 @@ export default component$((props: HistoryCardProps) => {
   return (
     <div class="flex flex-row justify-center">
       <div
-        class={twMerge(props.class, "flex flex-col justify-center h-[210px] w-[350px] bg-darkBlue rounded-xl text-white font-medium my-7 px-4 py-3")}
+        class={twMerge(props.class, "flex flex-col justify-center h-[210px] w-[350px] bg-darkBlue rounded-xl text-white font-medium my-3 px-4 py-3")}
         key={props.key}
       >
         <SubHeaderText text={`Action: ${props.action[0].toUpperCase() + props.action.substring(1)}`} color={"text-[#6499E3]"} />
