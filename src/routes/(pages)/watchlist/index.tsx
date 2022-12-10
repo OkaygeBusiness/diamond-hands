@@ -21,7 +21,10 @@ export default component$(() => {
   return (
     <>
       <Header text="Watchlist" hasButton={true} />
-      <Button text="Add" color="bg-lightGreen" />
+      <div class="flex py-1 justify-between">
+        <Button text="Add" color="bg-lightGreen" />
+        <Button text="Remove" color="bg-lightGreen" />
+      </div>
       {store.watchlist.map((stock, i) => {
         return <WatchStock key={i} stock={stock} change="0.00" isPositive={true} onClick$={() => removeStock(stock.id)} />
       })}

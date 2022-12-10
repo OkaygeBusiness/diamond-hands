@@ -4,6 +4,7 @@ import SubHeaderText from "../../atoms/subHeaderText/subHeaderText"
 import BodyText from "../../atoms/bodyText/bodyText"
 import HeaderText from "../../atoms/headerText/headerText"
 import LinkButton from "../../molecules/linkButton/linkButton"
+import Divider from "~/components/atoms/divider/divider"
 
 export interface quizResultProps {
   image?: string
@@ -27,10 +28,10 @@ export default component$((props: quizResultProps) => {
         <div class="flex justify-center">
           <BodyText text={`${props.score} pts`} />
         </div>
-        <div class="flex justify-center">
-          <LinkButton text="Home" link="/" />
-          <LinkButton text="Leaderboard" link="/guides/quiz/leaderboard" />
-          <LinkButton text="Guides" link="/guides" />
+        <div class="flex justify-between content-center mt-5">
+          <LinkButton text="Home" link="/" class="mx-2" />
+          <LinkButton text="Leaderboard" link="/guides/quiz/leaderboard" class="mx-2" />
+          <LinkButton text="Guides" link="/guides" class="mx-2" />
         </div>
       </div>
     </>

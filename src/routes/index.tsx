@@ -16,7 +16,7 @@ export default component$(() => {
           <SubHeaderText class="text-xl font-bold text-gray-400" text={`Welcome back ${user!.name.split(" ")[0]}!`} />
         </div>
       </header>
-      <BigCard headerText="Value" text={`${calculateWalletValue(user!.wallet!).toString()}$`} buttonText="Stocks" gain="7.27%" isPositive={true} />
+      <BigCard headerText="Your Wallet" text={`${calculateWalletValue(user!.wallet!).toString()}$`} buttonText="View" gain="7.27%" isPositive={true} link={"/wallet"} />
       <MiniCard text="Watchlist" subText="View your favourited stocks" buttonText="View" image="/assets/icons/star.png" link="/watchlist" />
       <MiniCard text="Trade History" subText="View your recent exchanges" buttonText="View" image={"/assets/icons/history.png"} link="/history" />
     </>
