@@ -4,7 +4,6 @@ import SubHeaderText from "../../atoms/subHeaderText/subHeaderText"
 import BodyText from "../../atoms/bodyText/bodyText"
 import HeaderText from "../../atoms/headerText/headerText"
 import LinkButton from "../../molecules/linkButton/linkButton"
-import Divider from "~/components/atoms/divider/divider"
 
 export interface quizResultProps {
   image?: string

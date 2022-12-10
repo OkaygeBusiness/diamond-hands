@@ -1,4 +1,4 @@
-import { User, TradeHistory, WalletStock, Stock } from "../../types/"
+import { User, TradeHistory } from "../../types/"
 import { users } from "../../db"
 
 export const getUsers = (): User[] => {
